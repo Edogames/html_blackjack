@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="background: none;">
+        <link rel="stylesheet" href="style.css">
+        <div class="card">
+            <h1 class="number" id="value">loading...</h1>
+        </div>
+        
+        <script>
+            const value = new URLSearchParams(window.location.search).get('value');
+            // https://www.kindpng.com/picc/m/82-824051_transparent-ace-of-spades-png-png-download.png
+            if(value == 1){
+                document.querySelector(".card").innerHTML = `<img class='ace' src='https://www.kindpng.com/picc/m/82-824051_transparent-ace-of-spades-png-png-download.png'>`;
+            }else{
+                document.getElementById("value").innerText = value;
+            }
+        </script>
+    </body>
+</html>

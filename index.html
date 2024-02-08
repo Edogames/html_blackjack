@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>BlackJack</title>
+    </head>
+    <body>
+        <h1 id="dealer-score"></h1>
+        <div id="holder-dealer"></div>
+        <h1 id="score"></h1>
+        <div style="display: flex;">
+            <button onclick="GetCard()" id="hit">Hit</button>
+            <button onclick="Stand()" id="stand">Stand</button>
+            <button onclick="Restart()" id="restart">Restart</button>
+        </div>
+        <div id="holder-player"></div>
+    </body>
+    <script src="./script.js"></script>
+    <script>
+        GetCards();
+    </script>
+</html>
